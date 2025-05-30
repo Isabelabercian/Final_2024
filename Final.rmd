@@ -202,5 +202,13 @@ Cat~Cat
 DrugUser = FinalData[FinalData$DrugUser=='yes',]
 ```
 
+##Graphical Results
+
+```{r}
+barchartGC(~infected + treatment,data=DrugUser)
+barchartGC(~infected + treatment,data=DrugUser, type="percent")
+```
+
+The bar graph shows that the vaccine appears to be less effective in individuals who use drugs.
 
 # Overall Results and Conclusions
