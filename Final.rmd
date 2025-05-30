@@ -90,6 +90,16 @@ Furthermore, the 95% confidence interval ranges from 2.21 to 3.61. Since the ent
 
 ## Females
 
+##Methods  
+$H_0$: The preventative vaccine does not exhibit its effective in females        
+$H_A$: The preventative vaccine exhibits its effective in females.  
+Cat~Cat.
+
+```{r}
+Females = FinalData[FinalData$sex=='F',]
+head(Females)
+```
+
 
 ## LGBTQ
 
