@@ -211,4 +211,14 @@ barchartGC(~infected + treatment,data=DrugUser, type="percent")
 
 The bar graph shows that the vaccine appears to be less effective in individuals who use drugs.
 
+##Numerical Results 
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=DrugUser)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The table shows that 91.67% of drug users who contracted COVID-19 had also received the vaccine. This suggests that the vaccine may be less effective among individuals who use drugs.
+
 # Overall Results and Conclusions
