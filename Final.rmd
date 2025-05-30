@@ -242,4 +242,8 @@ hi <- (guysfish$conf.int[2] / (guysfish$conf.int[2] + 1)) * 100
 options(digits=2)
 ```
 
+## Effectiveness Confidence Interval `r low`  to `r hi`
+
+The p-value is 1e-08, which is extremely low and well below the 0.05 threshold, so we reject the null hypothesis. This indicates that the odds of contracting COVID-19 differ significantly depending on whether or not a person received the vaccine.
+
 # Overall Results and Conclusions
