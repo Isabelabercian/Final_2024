@@ -178,6 +178,16 @@ colPerc(table1)
 
 The table shows that 20% of LGBTQ individuals who received the vaccine contracted COVID-19, compared to 80% of those who received the placebo. This suggests that the vaccine is effective in reducing COVID-19 infections within the LGBTQ community.
 
+##Infrential Results
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The p-value from the test is 0.000002266, which is less than 0.05, so we reject the null hypothesis. The odds ratio from Fisher’s exact test is 4.27, indicating that individuals who received the vaccine were about 4.27 times more likely to avoid contracting COVID-19 compared to those who received the placebo.
+
 ## Druggies
 
 
