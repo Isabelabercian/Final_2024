@@ -129,6 +129,23 @@ fisher.test(table1)
 
 The p-value from the test is 0.00000001914, which is less than 0.05, so we reject the null hypothesis. The odds ratio from Fisher’s exact test is 1.856, indicating that the vaccine is approximately 1.86 times more effective in women who received it compared to those who received the placebo.
 
+```{r}
+guysfish <- fisher.test(table1)
+guysfish
+```
+```{r}
+low <- (guysfish$conf.int[1] / (guysfish$conf.int[1] + 1)) * 100
+hi <- (guysfish$conf.int[2] / (guysfish$conf.int[2] + 1)) * 100
+options(digits=2)
+```
+
+## Effectiveness Confidence Interval `r low`  to `r hi`
+
+The p-value from Fisher’s test was 1e-08, which is well below the 0.05 threshold, so we reject the null hypothesis. This suggests that the vaccine is effective for females as well. The odds ratio is 1.9, indicating that women who received the vaccine were nearly twice as likely to avoid contracting COVID-19 compared to those who received the placebo.
+
+The 95% confidence interval ranges from 1.5 to 2.3. Since the entire interval is above 1, this further supports the conclusion that the vaccine has a statistically significant effect. Based on these results, the vaccine appears to be a beneficial option for females.
+
+
 ## LGBTQ
 
 
